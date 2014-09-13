@@ -1,0 +1,93 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+About	README.tex	/^\\end{abstract}$/;"	s
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-Wall -g -fopenmp$/;"	m
+CHORDAL	sle_path.h	/^  CHORDAL,$/;"	e	enum:__anon1
+CHORDAL	sle_path.h	/^  CHORDAL,$/;"	e	enum:__anon2
+FULL_PLANE	sle_path.h	/^  FULL_PLANE$/;"	e	enum:__anon1
+FULL_PLANE	sle_path.h	/^  FULL_PLANE$/;"	e	enum:__anon2
+LFLAGS	Makefile	/^LFLAGS=-lm$/;"	m
+RADIAL	sle_path.h	/^  RADIAL,$/;"	e	enum:__anon1
+RADIAL	sle_path.h	/^  RADIAL,$/;"	e	enum:__anon2
+SLE_ARG_H	sle_arg.h	6;"	d
+SLE_PATH_H	sle_path.h	9;"	d
+SLE_RAND_VAR_H	sle_rv.h	8;"	d
+SOURCES	Makefile	/^SOURCES=$(TARGET).c sle_path.c sle_rv.c sle_arg.c$/;"	m
+TARGET	Makefile	/^TARGET=sle_mc$/;"	m
+adapt_eps	sle_path.h	/^  double adapt_eps;$/;"	m	struct:sle_param
+argc	plot_cdf.py	/^argc = len(sys.argv)$/;"	v
+argc	plot_xy.py	/^argc = len(sys.argv)$/;"	v
+args	sle_arg.h	/^  char *args[2]; \/\/ {path_output_file, rv_output_file}$/;"	m	struct:sle_arg
+bin_i	plot_cdf.py	/^      bin_i = bin_i + 1$/;"	v
+bin_i	plot_cdf.py	/^bin_i = 1$/;"	v
+bin_size	plot_cdf.py	/^bin_size = (max_rv - min_rv)\/num_bin$/;"	v
+expected	plot_cdf.py	/^expected = lambda x: 1 - pow(1 - x * x, 5.0\/8.0)$/;"	v
+file	plot_cdf.py	/^file = open(sys.argv[1], "r")$/;"	v
+file	plot_xy.py	/^    file = open(sys.argv[i], "r")$/;"	v
+kappa	sle_path.h	/^  double kappa;$/;"	m	struct:sle_param
+main	sle_mc.c	/^int main(int argc, char* argv[])$/;"	f
+max_rv	plot_cdf.py	/^max_rv = rv_list[len(rv_list) - 1]$/;"	v
+mc_samples_total	sle_arg.h	/^  int mc_samples_total;$/;"	m	struct:sle_arg
+min_rv	plot_cdf.py	/^min_rv = rv_list[0]$/;"	v
+next	sle_path.h	/^  sle_pt_t *next;       \/* Next point on SLE path, i.e. pt at time$/;"	m	struct:sle_pt
+num_bin	plot_cdf.py	/^num_bin = 20$/;"	v
+param	sle_path.h	/^  sle_param_t param;$/;"	m	struct:sle
+parse_opt	sle_arg.c	/^error_t parse_opt(int key, char *arg, struct argp_state *state)$/;"	f
+point	plot_xy.py	/^      point = line.rstrip().split(',')$/;"	v
+prev	sle_path.h	/^  sle_pt_t *prev;       \/* Prev point on SLE path, i.e. pt at time$/;"	m	struct:sle_pt
+pt_start	sle_path.h	/^  sle_pt_t *pt_start;   \/* Head of the SLE linked list *\/$/;"	m	struct:sle
+rand_var	sle_rv.h	/^typedef double (*rand_var)(const sle_t *sle);$/;"	t
+rv_append_value	sle_rv.c	/^void rv_append_value(const sle_t *sle, const rand_var rv, FILE *fp)$/;"	f
+rv_horiz_dist_ratio	sle_rv.c	/^double rv_horiz_dist_ratio(const sle_t *sle)$/;"	f
+rv_list	plot_cdf.py	/^rv_list = []$/;"	v
+rv_num_steps_greater_than_eps	sle_rv.c	/^double rv_num_steps_greater_than_eps(const sle_t *sle)$/;"	f
+rv_sample	plot_cdf.py	/^  rv_sample = line.rstrip()$/;"	v
+sle	sle_path.h	/^struct sle {$/;"	s
+sle_alloc	sle_path.c	/^static void sle_alloc(sle_t *sle)$/;"	f	file:
+sle_arg	sle_arg.h	/^typedef struct sle_arg {$/;"	s
+sle_arg_t	sle_arg.h	/^} sle_arg_t;$/;"	t	typeref:struct:sle_arg
+sle_cmap_slit_disc	sle_path.c	/^static complex sle_cmap_slit_disc(double t, double u, complex z)$/;"	f	file:
+sle_cmap_slit_plane	sle_path.c	/^static complex sle_cmap_slit_plane(double t, double u, complex z)$/;"	f	file:
+sle_compute_pt	sle_path.c	/^static void sle_compute_pt(sle_t *sle, sle_pt_t *pt)$/;"	f	file:
+sle_compute_z	sle_path.c	/^static void sle_compute_z(complex *z, sle_pt_t *pt, sle_type_t type)$/;"	f	file:
+sle_deep_copy	sle_path.c	/^sle_t* sle_deep_copy(sle_t *sle_src)$/;"	f
+sle_free	sle_path.c	/^void sle_free(sle_t *sle)$/;"	f
+sle_gen_driving_fn	sle_path.c	/^static void sle_gen_driving_fn(sle_t *sle, int rand_seed)$/;"	f	file:
+sle_gen_path	sle_path.c	/^void sle_gen_path(sle_t *sle, long int rand_seed)$/;"	f
+sle_init	sle_path.c	/^void sle_init(sle_t *sle, sle_param_t sle_param)$/;"	f
+sle_param	sle_arg.h	/^  sle_param_t sle_param;$/;"	m	struct:sle_arg
+sle_param	sle_path.h	/^struct sle_param {$/;"	s
+sle_param_t	sle_path.h	/^typedef struct sle_param sle_param_t;$/;"	t	typeref:struct:sle_param
+sle_parse	sle_arg.c	/^error_t sle_parse(int argc, char *argv[], sle_arg_t *sle_arg)$/;"	f
+sle_print_param	sle_path.c	/^void sle_print_param(sle_t *sle, FILE *fp)$/;"	f
+sle_print_path	sle_path.c	/^void sle_print_path(sle_t *sle, FILE *fp)$/;"	f
+sle_pt	sle_path.h	/^struct sle_pt {$/;"	s
+sle_pt_adapt	sle_path.c	/^static void sle_pt_adapt(sle_t *sle, sle_pt_t *pt_start, sle_pt_t *pt_end)$/;"	f	file:
+sle_pt_t	sle_path.h	/^typedef struct sle_pt sle_pt_t;$/;"	t	typeref:struct:sle_pt
+sle_set_sample_times	sle_path.c	/^static void sle_set_sample_times(sle_t *sle)$/;"	f	file:
+sle_set_starting_z	sle_path.c	/^static void sle_set_starting_z(complex *z, sle_type_t type)$/;"	f	file:
+sle_t	sle_path.h	/^typedef struct sle sle_t;$/;"	t	typeref:struct:sle
+sle_trim_path	sle_path.c	/^static void sle_trim_path(sle_t *sle)$/;"	f	file:
+sle_type_t	sle_path.h	/^} sle_type_t;$/;"	t	typeref:enum:__anon1
+sle_type_t	sle_path.h	/^} sle_type_t;$/;"	t	typeref:enum:__anon2
+t	sle_path.h	/^  double t;             \/* Time value corresponding to pt *\/$/;"	m	struct:sle_pt
+threads_total	sle_arg.h	/^  int threads_total;$/;"	m	struct:sle_arg
+time_sample_rate	sle_path.h	/^  unsigned int time_sample_rate;$/;"	m	struct:sle_param
+time_stop	sle_path.h	/^  double time_stop;$/;"	m	struct:sle_param
+type	sle_path.h	/^  sle_type_t type;$/;"	m	struct:sle_param
+u	sle_path.h	/^  double u;             \/* Value of driving function at time t *\/$/;"	m	struct:sle_pt
+verbose	sle_arg.h	/^  int verbose;$/;"	m	struct:sle_arg
+x_expect	plot_cdf.py	/^x_expect = numpy.arange(x_l, x_r + (x_r-x_l)\/200.0, (x_r - x_l)\/100.0)$/;"	v
+x_l	plot_cdf.py	/^x_l = math.floor(min_rv)$/;"	v
+x_list	plot_cdf.py	/^x_list = numpy.arange(min_rv, max_rv + 0.5 * bin_size, bin_size)$/;"	v
+x_list	plot_xy.py	/^    x_list = []$/;"	v
+x_r	plot_cdf.py	/^x_r = math.ceil(min_rv)$/;"	v
+y_expect	plot_cdf.py	/^y_expect = expected(x_expect)$/;"	v
+y_list	plot_cdf.py	/^y_list = [0] * len(x_list)$/;"	v
+y_list	plot_xy.py	/^    y_list = []$/;"	v
+z	sle_path.h	/^  complex z;            \/* Tip of SLE path in complex plane at time t *\/$/;"	m	struct:sle_pt

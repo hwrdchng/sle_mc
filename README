@@ -1,0 +1,26 @@
+===============================================================================
+Monte Carlo Simulations of Schramm-Loewner Evolution curves
+===============================================================================
+
+Requirements: make, gcc, GNU argparse, and matplotlib
+(for optional Python scripts)
+
+sudo apt-get install build-essential python-matplotlib
+
+-------------------------------------------------------------------------------
+
+Usage:
+make
+./sle_mc -v
+python ./plot/plot_xy.py ./path.csv
+
+For further info:
+./sle_mc --help
+
+If you are running this on a computing cluster, you may find the script
+run_batch.sh useful
+
+------------------------------------------------------------------------------
+
+Released under the terms of the GNU GPL
+
